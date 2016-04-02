@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.inner-container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.page-header {
+	background-color: $dark-grey;
+	padding: 16% 0 9%;
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+//--------------------------------------------------------------
+// Center Items Vertically
+//--------------------------------------------------------------
+
+.over-text {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.outer-table {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+.inner-table {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
