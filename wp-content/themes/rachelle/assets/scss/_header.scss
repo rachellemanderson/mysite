@@ -1,0 +1,56 @@
+.site-header {
+	background-color: $white-transparent;
+	position: fixed;
+	z-index: 5;
+	width: 100%;
+	text-align: center;
+	padding: 0;
+
+	.primary-menu {
+		position: relative;
+	}
+
+	ul {
+		list-style: none;
+
+		li {
+			display: inline-block;
+			text-transform: uppercase;
+			padding: 20px 3%;
+
+			a {
+				color: $white;
+
+				&:hover {
+					color: $secondary-solid;
+				}
+			}
+
+			&:hover {
+				.sub-menu {
+					display: block;
+				}
+			}
+		}
+	}
+
+	.sub-menu {
+		display: none;
+		position: absolute;
+		top: 46px;
+		left: 0;
+		width: 100%;
+		padding: 20px 3%;
+		background-color: $white;
+		text-align: left;
+
+		li {
+			display: list-item;
+			padding: 0;
+
+			a {
+				color: $dark-grey;
+			}
+		}
+	}
+}

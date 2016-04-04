@@ -1,0 +1,42 @@
+.resume {
+
+	.page-header {
+		margin-bottom: 0;
+	}
+
+	.skills {
+		background-color: $blue;
+		padding: 5% 0;
+	}
+
+	.logo-circle {
+		width: 15%;
+/*		padding-top: 15%;*/
+		display: inline-block;
+		border-radius: 100%;
+		text-align: center;
+
+		img {
+			width: 90%;
+		}
+	}
+
+	.byu {
+		background-color: $white;
+		padding: 5% 0;
+
+		.logo-circle {
+			background-color: $secondary-solid;
+		}
+	}
+
+	.qualtrics {
+		background-color: $secondary-transparent;
+		padding: 5% 0;
+	}
+
+	.voltage {
+		background-color: $white;
+		padding: 5% 0;
+	}	
+}

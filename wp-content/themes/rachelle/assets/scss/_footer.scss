@@ -1,0 +1,27 @@
+.footer {
+	.section-one {
+		background-color: $blue;
+		padding: 50px 0;
+		text-align: center;
+
+		.button {
+			background-color: $white;
+			color: $dark-grey;
+
+			&:hover {
+				background-color: $dark-grey;
+				color: $white;
+			}
+		}
+	}
+
+	.section-two {
+		background-color: $secondary-solid;
+		padding: 15px 0;
+	}
+
+	.section-three {
+		background-color: $dark-grey;
+		padding: 40px 0;
+	}
+}
