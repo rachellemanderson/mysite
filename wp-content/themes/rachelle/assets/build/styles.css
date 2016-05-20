@@ -375,14 +375,29 @@ html {
   font-weight: 400; }
 
 h1 {
-  font-size: 26px;
-  font-size: 2.6rem;
+  font-size: 30px;
+  font-size: 3rem;
   font-weight: 500;
   color: #FFF;
   text-transform: uppercase;
   padding: 0 30px 15px;
   border-bottom: 1px solid #FFF;
   display: inline-block; }
+
+h2 {
+  font-size: 24px;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #48525c;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 30px 10px;
+  border-bottom: 1px solid #48525c;
+  display: inline-block; }
+
+.heading-wrapper {
+  text-align: center;
+  width: 100%; }
 
 p {
   font-size: 16px;
@@ -520,23 +535,61 @@ a {
   padding: 40px 0; }
 
 .home-page .page-header {
-  padding-top: 40%; }
+  padding-top: 20%; }
 
-.home-page .logo-container {
-  background-color: #b0c4de;
-  width: 80%;
-  max-width: 800px;
+.home-page .work-archive {
   text-align: center;
-  border: 3px solid #FFF;
-  margin: -15% auto 0;
-  padding: 10% 0 5%; }
-  .home-page .logo-container .picture {
-    width: 25%;
-    display: block;
-    margin: -28% auto 0; }
-  .home-page .logo-container .logo {
-    width: 80%;
-    margin-top: 5%; }
+  font-size: 0;
+  margin-bottom: 60px; }
+  .home-page .work-archive .tile {
+    width: 33.33%;
+    display: inline-block;
+    padding: 1% .7%;
+    position: relative;
+    vertical-align: top; }
+    .home-page .work-archive .tile img {
+      width: 100%; }
+    .home-page .work-archive .tile p {
+      font-family: "Cedarville Cursive", cursive;
+      font-size: 30px;
+      font-size: 3rem;
+      color: #000;
+      opacity: 0;
+      transition: opacity 1s; }
+    .home-page .work-archive .tile .tile-overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #FFF;
+      opacity: 0;
+      transition: opacity 1s; }
+    .home-page .work-archive .tile .over-text {
+      padding: 10%; }
+    .home-page .work-archive .tile:hover {
+      color: #000; }
+      .home-page .work-archive .tile:hover .tile-overlay {
+        opacity: .5;
+        transition: opacity 1s; }
+      .home-page .work-archive .tile:hover p {
+        opacity: 1;
+        transition: opacity 1s; }
+    .home-page .work-archive .tile:visted, .home-page .work-archive .tile:active {
+      color: #000; }
+
+.home-page .experience {
+  background-color: #d9d9d9; }
+  .home-page .experience .third {
+    width: 33%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5%;
+    text-align: center; }
+    .home-page .experience .third img {
+      width: 90%; }
+    .home-page .experience .third .qualtrics {
+      width: 70%; }
 
 .work-archive .page-content {
   font-size: 0;

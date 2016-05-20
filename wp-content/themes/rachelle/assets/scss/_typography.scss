@@ -4,14 +4,31 @@ html {
 }
 
 h1 {
-	font-size: 26px;
-	font-size: 2.6rem;
+	font-size: 30px;
+	font-size: 3rem;
 	font-weight: 500;
 	color: $white;
 	text-transform: uppercase;
 	padding: 0 30px 15px;
 	border-bottom: 1px solid $white;
 	display: inline-block;
+}
+
+h2 {
+	font-size: 24px;
+	font-size: 2.4rem;
+	font-weight: 500;
+	color: $dark-grey;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 0 30px 10px;
+	border-bottom: 1px solid $dark-grey;
+	display: inline-block;
+}
+
+.heading-wrapper {
+	text-align: center;
+	width: 100%;
 }
 
 p {

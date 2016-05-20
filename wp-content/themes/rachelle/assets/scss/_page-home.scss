@@ -1,26 +1,86 @@
 .home-page {
 	.page-header {
-		padding-top: 40%;
+		padding-top: 20%;
 	}
 
-	.logo-container {
-		background-color: $secondary-solid;
-		width: 80%;
-		max-width: 800px;
+	.work-archive {
 		text-align: center;
-		border: 3px solid $white;
-		margin: -15% auto 0;
-		padding: 10% 0 5%;
+		font-size: 0;
+		margin-bottom: 60px;
 
-		.picture {
-			width: 25%;
-			display: block;
-			margin: -28% auto 0;
+		.tile {
+			width: 33.33%;
+			display: inline-block;
+			padding: 1% .7%;
+			position: relative;
+			vertical-align: top;
+
+			img {
+				width: 100%;
+			}
+
+			p {
+				font-family: $font-secondary;
+				font-size: 30px;
+				font-size: 3rem;
+				color: $black;
+				opacity: 0;
+				transition: opacity 1s;
+			}
+
+			.tile-overlay {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background-color: $white;
+				opacity: 0;
+				transition: opacity 1s;
+			}
+
+			.over-text {
+				padding: 10%;
+			}
+
+			&:hover {
+				color: $black;
+
+				.tile-overlay {
+					opacity: .5;
+					transition: opacity 1s;
+				}
+
+				p {
+					opacity: 1;
+					transition: opacity 1s;
+				}
+			}
+
+			&:visted,
+			&:active {
+				color: $black;
+			}
 		}
+	}
 
-		.logo {
-			width: 80%;
-			margin-top: 5%;
+	.experience {
+		background-color: $medium-grey;
+
+		.third {
+			width: 33%;
+			display: inline-block;
+			vertical-align: top;
+			padding: 5%;
+			text-align: center;
+
+			img {
+				width: 90%;
+			}
+
+			.qualtrics {
+				width: 70%;
+			}
 		}
 	}
 }
