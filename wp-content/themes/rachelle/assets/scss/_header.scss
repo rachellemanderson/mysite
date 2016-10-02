@@ -1,10 +1,16 @@
 .site-header {
 	background-color: $white-transparent;
+	transition: background-color 1s;
 	position: fixed;
 	z-index: 5;
 	width: 100%;
 	text-align: center;
 	padding: 0;
+
+	&.sticky {
+		background-color: $dark-grey;
+		transition: background-color 1s;
+	}
 
 	.primary-menu {
 		position: relative;

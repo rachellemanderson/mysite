@@ -10,7 +10,7 @@ get_header(); ?>
 <div class="home-page">
 	<header class="page-header">
 	</header>
-	<section class="container work-archive">
+	<section class="container work-archive js-anchor">
 		<h2>My Work</h2>
 		<div class="inner-container page-content">
 			<a href="#" class="tile">
@@ -79,9 +79,10 @@ get_header(); ?>
 					</div>
 				</div>
 			</a>
+			<a href="#" class="button">More Work</a>
 		</div>
 	</section>
-	<section class="container experience">
+	<section class="container experience js-anchor" id="resume">
 		<div class="heading-wrapper">
 			<h2>Experience</h2>
 		</div>

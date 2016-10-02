@@ -417,8 +417,10 @@ a {
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 40px; }
+  margin: 0 auto; }
+
+section {
+  padding: 5% 40px; }
 
 .inner-container {
   max-width: 1000px;
@@ -428,8 +430,7 @@ a {
 .page-header {
   background-color: #48525c;
   padding: 7% 0;
-  text-align: center;
-  margin-bottom: 5%; }
+  text-align: center; }
   .page-header h1 {
     padding-top: 76px; }
 
@@ -481,11 +482,15 @@ a {
 
 .site-header {
   background-color: rgba(255, 255, 255, 0.3);
+  transition: background-color 1s;
   position: fixed;
   z-index: 5;
   width: 100%;
   text-align: center;
   padding: 0; }
+  .site-header.sticky {
+    background-color: #48525c;
+    transition: background-color 1s; }
   .site-header .primary-menu {
     position: relative; }
   .site-header ul {
@@ -539,8 +544,7 @@ a {
 
 .home-page .work-archive {
   text-align: center;
-  font-size: 0;
-  margin-bottom: 60px; }
+  font-size: 0; }
   .home-page .work-archive .tile {
     width: 33.33%;
     display: inline-block;
@@ -577,6 +581,10 @@ a {
         transition: opacity 1s; }
     .home-page .work-archive .tile:visted, .home-page .work-archive .tile:active {
       color: #000; }
+  .home-page .work-archive .button {
+    background-color: #b0c4de;
+    margin-top: 30px;
+    font-weight: bold; }
 
 .home-page .experience {
   background-color: #d9d9d9; }
@@ -592,8 +600,7 @@ a {
       width: 70%; }
 
 .work-archive .page-content {
-  font-size: 0;
-  margin-bottom: 60px; }
+  font-size: 0; }
   .work-archive .page-content .tile {
     width: 33.33%;
     display: inline-block;
@@ -608,7 +615,8 @@ a {
       font-size: 3rem;
       color: #000;
       opacity: 0;
-      transition: opacity 1s; }
+      transition: opacity 1s;
+      word-break: break-word; }
     .work-archive .page-content .tile .tile-overlay {
       position: absolute;
       top: 0;

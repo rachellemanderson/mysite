@@ -10,12 +10,15 @@
 			 */
 			MySite.challengeElement = document.querySelector( '.breakpoint-context' );
 			MySite.challengeContext();
+			MySite.scrollToAnchor();
 			MySite.initSliders();
+			MySite.stickyHeader();
 
 			$( window ).resize( MySite.debounce( function() {
 			}, 250 ));
 
 			$( window ).scroll( function() {
+				MySite.stickyHeader();
 			});
 		},
 
@@ -72,10 +75,23 @@
 
 	MySite.scrollToAnchor = function() {
 		$( '.js-to-anchor' ).click( function() {
+			console.log('test');
 			var	indexNumber = $( '.js-to-anchor' ).index( this ),
 				anchor = $( '.js-anchor' ).eq( indexNumber );
-				
-			$( 'body' ).animate({ scrollTop: anchor.offset().top }, 800 ); });
+			$( 'body' ).animate( { scrollTop: anchor.offset().top }, 800 ); 
+		});
+	};
+
+	MySite.stickyHeader = function() {
+		var yScroll = window.pageYOffset,
+			siteHeader = $( '.site-header' ),
+			yPosition = $( '.page-header' ).outerHeight() - siteHeader.outerHeight();
+
+		if( yScroll > yPosition ) {
+			siteHeader.addClass( 'sticky' );
+		} else {
+			siteHeader.removeClass( 'sticky' );
+		}
 	};
 
 	$( document ).ready( function() {

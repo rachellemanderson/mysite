@@ -6,7 +6,6 @@
 	.work-archive {
 		text-align: center;
 		font-size: 0;
-		margin-bottom: 60px;
 
 		.tile {
 			width: 33.33%;
@@ -61,6 +60,12 @@
 			&:active {
 				color: $black;
 			}
+		}
+
+		.button {
+			background-color: $secondary-solid;
+			margin-top: 30px;
+			font-weight: bold;
 		}
 	}
 
